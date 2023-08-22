@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function capitalize(string){
+            // get the first letter and upper case it then slice the remaining letters
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        }
+
+        const getString = prompt("enter string");
+        alert(capitalize(getString))
+    </script>
+</body>
+</html>
