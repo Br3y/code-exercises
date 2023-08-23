@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <style>
+        span{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <h1>FizzBuzz</h1>
+    <input type="number">
+    <button>Enter a number</button>
+
+    <span></span>
+    <script>
+        const input = document.querySelector("input");
+        const btn = document.querySelector("button");
+        const span = document.querySelector("span");
+        btn.addEventListener("click",()=>{
+            for(let i = 1; i <= input.value; i++ ){
+                if(i % 3 == 0 && i % 5 == 0){
+                    span.innerHTML += `FizzBuzz<br>`;
+                } else if(i % 3 == 0){
+                    span.innerHTML += 'Fizz<br>';
+                } else if(i % 5 == 0){
+                    span.innerHTML += 'Buzz<br>';
+                } else {
+                    span.innerHTML += `${i} <br>`;
+                }
+            }
+        } )
+
+    </script>
+</body>
+</html>
