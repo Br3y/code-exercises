@@ -16,7 +16,16 @@
     <p>BMI: <span></span></p>
 
     <script>
-
+        const height = document.querySelector("#height");
+        const weight = document.querySelector("#weight");
+        const submit = document.querySelector("#submit");
+        const span = document.querySelector("span");
+        function calculateBMI(){
+            const heightInMeters = height.value / 100;
+            const bmi = weight.value / (heightInMeters * heightInMeters);
+            return span.textContent = bmi.toFixed(2);
+        }
+        submit.addEventListener('click', calculateBMI);
     </script>
 </body>
 </html>
