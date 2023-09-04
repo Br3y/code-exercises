@@ -12,11 +12,35 @@
     
     <!-- JAVASCRIPT SCRIPT -->
     <script>
+        // review
         const container = document.querySelector("#container");
         const content = document.createElement("div");
         content.classList.add('content');
         content.textContent = 'This is the glorious tex-content!';
         container.appendChild(content);
+
+        // exercise
+        const p = document.createElement("p");
+        p.textContent = "Hey I'm red!";
+        container.append(p);
+
+        const h3 = document.createElement("h3")
+        h3.textContent = "I'm a blue h3!";
+        container.append(h3);
+
+        const div = document.createElement("div");
+        div.style.border = "3px solid black";
+        div.style.backgroundColor = "pink";
+        container.appendChild(div);
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "I'm in a div";
+        div.appendChild(h1);
+
+        const p2 = document.createElement("p");
+        p2.textContent = "ME TOO!";
+        div.appendChild(p2);
+
     </script>
   </body>
 </html>
