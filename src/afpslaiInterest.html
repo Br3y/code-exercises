@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFPSLAI</title>
+</head>
+<body>
+    <h1>AFPSLAI Interest</h1>
+    <h3>Max Deposit:</h3>
+    <p>75k every quarterly with 300k yearly and maximum of 3M for interest</p>
+    -------------------------------------------
+    <div></div>
+    <script>
+        const deposit = 75_000;
+        const interestEveryQuarter = 1.0425;
+        let totalBalance = 0;
+        const container = document.querySelector("div");
+        
+        for(let i = 1; i < 40; i++){
+            totalBalance += deposit;
+            totalBalance *= interestEveryQuarter;
+
+            const para = document.createElement("p");
+            para.textContent = `${i/4}st yr interest: ${totalBalance.toLocaleString()}`;
+            container.appendChild(para);
+
+            if(i % 4 === 0){
+                const hr = document.createElement("hr");
+                container.appendChild(hr);
+            }
+            if(totalBalance >= 3_000_000){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
