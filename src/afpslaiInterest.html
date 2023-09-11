@@ -16,13 +16,12 @@
         const interestEveryQuarter = 1.0425;
         let totalBalance = 0;
         const container = document.querySelector("div");
-        
         for(let i = 1; i < 40; i++){
             totalBalance += deposit;
             totalBalance *= interestEveryQuarter;
 
             const para = document.createElement("p");
-            para.textContent = `${i/4}st yr interest: ${totalBalance.toLocaleString()}`;
+            para.textContent = `${i/4} yr interest: ${totalBalance.toLocaleString()}`;
             container.appendChild(para);
 
             if(i % 4 === 0){
