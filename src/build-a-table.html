@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+    </style>
+    <title>Build A Table</title>
+  </head>
+  <body>
+    <h1>Mountains</h1>
+    <div id="mountains"></div>
+    <script>
+      const MOUNTAINS = [
+        { name: "Kilimanjaro", height: 5895, place: "Tanzania" },
+        { name: "Everest", height: 8848, place: "Nepal" },
+        { name: "Mount Fuji", height: 3776, place: "Japan" },
+        { name: "Vaalserberg", height: 323, place: "Netherlands" },
+        { name: "Denali", height: 6168, place: "United States" },
+        { name: "Popocatepetl", height: 5465, place: "Mexico" },
+        { name: "Mont Blanc", height: 4808, place: "Italy/France" },
+      ];
+      const container = document.querySelector("#mountains");
+      // create table and append
+      const table = document.createElement("table");
+      container.appendChild(table);
+      // iterate until all MOUNTAINS show in browser
+ 
+      for (i = 0; i < MOUNTAINS.length; i++) {
+        const tr = document.createElement("tr");
+        table.appendChild(tr);
+
+    
+        for(j = 0; j < 3; j++){
+            if(i === 0){
+                for(const key of ["name", "height", "place"]){
+                    const th = document.createElement("th");
+                th.textContent = key;
+                tr.appendChild(th);
+                }
+            }
+            else{
+                const td = document.createElement("td");
+                td.textContent = Object.values(MOUNTAINS[i]);
+                tr.appendChild(td);
+            }
+        }
+         
+      }
+
+    //   const MOUNTAINS = [
+    //     { name: "Kilimanjaro", height: 5895, place: "Tanzania" },
+    //     { name: "Everest", height: 8848, place: "Nepal" },
+    //     { name: "Mount Fuji", height: 3776, place: "Japan" },
+    //     { name: "Vaalserberg", height: 323, place: "Netherlands" },
+    //     { name: "Denali", height: 6168, place: "United States" },
+    //     { name: "Popocatepetl", height: 5465, place: "Mexico" },
+    //     { name: "Mont Blanc", height: 4808, place: "Italy/France" },
+    //   ];
+    //   const container = document.querySelector("#mountains");
+    //   const table = document.createElement("table")
+    //   container.appendChild(table);
+
+    //   const headerRow = document.createElement("tr");
+    //   table.appendChild(headerRow);
+
+    //   for(const key of ["name", "height", "place"]){
+    //     const th = document.createElement("th");
+    //     th.textContent = key;
+    //     headerRow.appendChild(th);
+    //   }
+    //   for (const mountain of MOUNTAINS) {
+    //         const tr = document.createElement("tr");
+    //         table.appendChild(tr);
+
+    //         // Create table cells for each property (name, height, place)
+    //         for (const key of ["name", "height", "place"]) {
+    //             const td = document.createElement("td");
+    //             td.textContent = mountain[key];
+    //             tr.appendChild(td);
+    //         }
+    //     }
+    </script>
+  </body>
+</html>
