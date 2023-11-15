@@ -1,1 +1,4 @@
-Life left percentage
+1. Life left percentage
+    - create a code that will make the user what nationality he/she, then ask his/her birth of date and gender.
+    - calculate and return the life left based on the input above.
+    - the result are either in percentage bar like nasdaily or multiple box ( 1box =  1day ) then check or make it darken based on his life left.
