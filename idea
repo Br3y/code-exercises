@@ -1,0 +1,10 @@
+create a software that will ask about anime
+
+anime name, 
+year and season, 
+rating in myanimelist,
+opening songs,
+ending songs 
+
+
+then save in database, after that it can be sort on name, year, season or ratings  
