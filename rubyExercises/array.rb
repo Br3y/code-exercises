@@ -51,3 +51,10 @@ b = string[11]
 c = string[19]
 
 print "a is: #{a}, b is: #{b}, c is: #{c ? c : "nil"} \n"
+
+# You run the following code ... and get the following error message:
+
+names = ['bob', 'joe', 'susan', 'margaret']
+# names['margaret'] = 'jody'
+
+# because it shouldn't be names['margaret'] but it should be names[3]
