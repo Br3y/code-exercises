@@ -40,3 +40,14 @@ puts arr.index(5) # = looking for number that has a value of 5 inside array and 
 # arr.index[5] # = ERROR
 
 puts arr[5] # = count the array from index 0 to 5 and return what value is it, so 8 is the value
+
+
+puts "----------------------------"
+# What is the value of a, b, and c in the following program?
+
+string = "Welcome to America!"
+a = string[6]
+b = string[11]
+c = string[19]
+
+print "a is: #{a}, b is: #{b}, c is: #{c ? c : "nil"} \n"
