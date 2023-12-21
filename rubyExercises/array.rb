@@ -30,3 +30,13 @@ output = arr.flatten.select { |value| value == "example"}
 # in exercise solution
 # arr.last.first
 # arr[1][0]
+
+puts "----------------------------"
+
+arr = [15, 7, 18, 5, 12, 8, 5, 1]
+
+puts arr.index(5) # = looking for number that has a value of 5 inside array and count what place is it, so it will return number 3
+
+# arr.index[5] # = ERROR
+
+puts arr[5] # = count the array from index 0 to 5 and return what value is it, so 8 is the value
