@@ -21,3 +21,12 @@ puts arr2.to_s
 
 puts "----------------------------"
 
+# How do you return the word "example" from the following array?
+
+arr = [["test", "hello", "world"],["example", "mem"]]
+
+# my solution
+output = arr.flatten.select { |value| value == "example"}
+# in exercise solution
+# arr.last.first
+# arr[1][0]
