@@ -68,7 +68,6 @@ top_five_games.each_with_index do |val, idx|
 end
 
 array = [1, 2, 3, 4, 5]
-new_array = []
 array.each_with_index do |value, index|
     puts "#{index}. #{value}"
 end
@@ -81,3 +80,12 @@ puts "----------------------------"
     arrays at the end of this program, The original array and the new array you've created.
     Print both arrays to the screen using the p method instead of puts.
 =end
+old_array = [1,2,3,4,5,6,7,8,9]
+new_array = []
+
+old_array.each do |n|
+    # new_array << n + 2
+    # new_array.push(n + 2)
+    new_array[new_array.length] = n + 2
+end
+puts new_array.to_s
