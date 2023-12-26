@@ -48,3 +48,15 @@ function countdownByFives(){
   return result
 }
 console.log(countdownByFives())
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array, print/log the sum of the first value in the array, plus the array’s length. Assume that the array is composed of numbers.")
+
+
+function firstPlusLength(arr){
+  let total = arr[0] + arr.length    
+  return total
+}
+let arr = [1,2,5]
+console.log(firstPlusLength(arr))
