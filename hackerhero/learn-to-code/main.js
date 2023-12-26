@@ -165,3 +165,20 @@ function findSum(arr){
 }
 arr = [1,2,3]
 console.log(findSum(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array with multiple values, write a function that returns the maximum number in the array.")
+console.log("For example, findMax([-3,3,5,7]) should return 7.")
+function findMax(arr){
+  let max = -1
+  for(let i = 0; i < arr.length; i++){
+      if(arr[i] > max){
+          max = arr[i]
+      }
+
+  }
+  return max
+}
+arr = [-3, 3, 5, 7]
+console.log(findMax(arr))
