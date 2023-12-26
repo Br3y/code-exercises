@@ -198,3 +198,24 @@ function findMin(arr){
 }
 arr = [0,3,-5]
 console.log(findMin(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array with multiple values, write a function that returns a new array with two elements. The first value in the new array should be the minimum value in the original array. The second value in the new array should be the maximum value in the original array.")
+console.log("For example, findMinMax([1,3,5]) should return [1, 5]. Similarly, findMinMax([-1,-3,10]) should return [-3, 10].")
+function findMinMax(arr){
+  let min = arr[0]
+  let max = arr[0]
+  for(let i = 0; i < arr.length; i++){
+      if (arr[i] > max){
+          max = arr[i]    
+      } else if (arr[i] < min){
+          min = arr[i]    
+      }
+  }
+  return [min, max]
+}
+arr = [1, 3, 5]
+console.log(findMinMax(arr))
+arr = [-1, -3, 10]
+console.log(findMinMax(arr))
