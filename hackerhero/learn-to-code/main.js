@@ -6,7 +6,6 @@ function print1to20() {
   }
   return result
 }
-
 console.log(print1to20())
 
 
@@ -22,3 +21,16 @@ function printOdd3to20() {
   return result
 }
 console.log(printOdd3to20())
+
+
+console.log("----------------------------------------------------------")
+console.log("Print/log all the multiples of 7 between the numbers 7 to 62.")
+
+function multiplesOf7(){
+  let result = ""
+  for(let i = 1; i <= 8; i++){
+    result = `${result} ${i*7}`
+  }
+  return result
+}
+console.log(multiplesOf7())
