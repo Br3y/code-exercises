@@ -219,3 +219,21 @@ arr = [1, 3, 5]
 console.log(findMinMax(arr))
 arr = [-1, -3, 10]
 console.log(findMinMax(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given array of numbers, create function to replace last value with number of positive values.")
+console.log("Example, countPositives([-1,1,1,1]) changes array to [-1,1,1,3] and returns it.")
+function countPositives(arr){
+  let positiveValue = 0
+  for(let i = 0; i < arr.length; i++){
+      if(arr[i] > 0){
+          positiveValue += 1    
+      }    
+  }
+  arr[arr.length] = positiveValue
+  
+  return arr
+}
+arr = [1, 2, 3, 2, 10]
+console.log(countPositives(arr))
