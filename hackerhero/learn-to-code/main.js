@@ -124,3 +124,15 @@ for(let i = 0; i < arr.length; i++){
   return arr
 }
 console.log(bePositive(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array with multiple values, write a function that replaces each value in the array with the product of the original value multiplied by itself.")
+console.log("For example, squareVal( [1, 3, 5] ) should return [1, 9, 25].")
+function squareVal(arr){
+  for(let i = 0; i < arr.length; i++){
+    arr[i] *= arr[i]
+  }
+  return arr
+}
+console.log(squareVal(arr))
