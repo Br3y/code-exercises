@@ -68,3 +68,15 @@ function printEven4to22(){
   return `${result} \n` + "total is: " + total
 }
 console.log(printEven4to22())
+
+
+console.log("----------------------------------------------------------")
+console.log("Add odd integers from -25,000 to 30,000 and have the function return its final sum. Is there a short cut?")
+function addOdInts(){
+  let total = 0
+  for(let i = -24999; i <= 30000; i+=2){
+    total += i
+  }
+  return total
+}
+console.log(addOdInts())
