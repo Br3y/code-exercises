@@ -237,3 +237,21 @@ function countPositives(arr){
 }
 arr = [1, 2, 3, 2, 10]
 console.log(countPositives(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array, write a function that prints values that are greater than its 2nd value in the array.")
+console.log("For example, given [1,3,5,7,9,13], it should print/log 5, 7, 9, and 13. Assume that the array has at least 2 values. Have the function also return the sum of the numbers that were printed/logged.")
+function valGreaterThanSecond(arr) {
+  let total = 0
+  let result = ""
+  for(let i = 0; i < arr.length; i++){
+      if(arr[1] < arr[i]){
+          result = result + " " + arr[i]
+          total += arr[i]
+      }
+  }
+  console.log(result)
+  return total
+}
+console.log(valGreaterThanSecond(arr))
