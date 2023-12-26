@@ -1,3 +1,4 @@
+console.log("----------------------------------------------------------")
 console.log("Create a function that prints/logs all the integers from 1 to 20.")
 function print1to20() {
   let result = ""
@@ -10,8 +11,6 @@ console.log(print1to20())
 
 
 console.log("----------------------------------------------------------")
-
-
 console.log("Create a function that prints/logs all the odd numbers from 3 to 20.");
 function printOdd3to20() {
   let result = ""
@@ -25,7 +24,6 @@ console.log(printOdd3to20())
 
 console.log("----------------------------------------------------------")
 console.log("Print/log all the multiples of 7 between the numbers 7 to 62.")
-
 function multiplesOf7(){
   let result = ""
   for(let i = 1; i <= 8; i++){
@@ -38,8 +36,6 @@ console.log(multiplesOf7())
 
 console.log("----------------------------------------------------------")
 console.log("Log positive numbers starting at 50, counting down by fives (exclude 0).")
-
-
 function countdownByFives(){
   let result = ""
   for(let i = 50; i > 0; i-=5){
@@ -52,11 +48,23 @@ console.log(countdownByFives())
 
 console.log("----------------------------------------------------------")
 console.log("Given an array, print/log the sum of the first value in the array, plus the array’s length. Assume that the array is composed of numbers.")
-
-
 function firstPlusLength(arr){
   let total = arr[0] + arr.length    
   return total
 }
 let arr = [1,2,5]
 console.log(firstPlusLength(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Create a function that prints/logs all the even numbers from 4 to 22. Have it also return the sum of all the numbers that were printed.")
+function printEven4to22(){
+  let total = 0
+  let result = ""
+  for(let i = 4; i <= 22; i+=2){
+      total += i
+      result = result + " " + i   
+  }
+  return `${result} \n` + "total is: " + total
+}
+console.log(printEven4to22())
