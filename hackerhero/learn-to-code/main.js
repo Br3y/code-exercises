@@ -151,3 +151,17 @@ function noNeg(arr){
 }
 arr = [1, 5, 10, -2]
 console.log(noNeg(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array of multiple values, write a function that returns the sum of its numbers.")
+console.log("For example, findSum([1,2,3]) should return 6.")
+function findSum(arr){
+  let total = 0
+  for(let ar of arr){
+      total += ar
+  }
+  return total
+}
+arr = [1,2,3]
+console.log(findSum(arr))
