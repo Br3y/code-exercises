@@ -34,3 +34,17 @@ function multiplesOf7(){
   return result
 }
 console.log(multiplesOf7())
+
+
+console.log("----------------------------------------------------------")
+console.log("Log positive numbers starting at 50, counting down by fives (exclude 0).")
+
+
+function countdownByFives(){
+  let result = ""
+  for(let i = 50; i > 0; i-=5){
+    result = `${result} ${i}`
+  }
+  return result
+}
+console.log(countdownByFives())
