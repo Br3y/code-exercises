@@ -95,3 +95,17 @@ arr = [2,3,5]
 console.log(printArray(arr))
 
 
+console.log("----------------------------------------------------------")
+console.log("Given an array, write a function that only prints/logs its positive value.")
+console.log("For example, printPositives([-1,3,-5, 10]) prints/logs 3, 10.")
+function printPositives(arr){
+  let result = ""
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 0){
+        result = result + " " + arr[i]
+    }    
+  }
+  return result
+}
+arr = [-1, 3, -5, 10]
+console.log(printPositives(arr))
