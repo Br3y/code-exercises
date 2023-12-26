@@ -80,3 +80,18 @@ function addOdInts(){
   return total
 }
 console.log(addOdInts())
+
+
+console.log("----------------------------------------------------------")
+console.log("Given an array, write a function that prints/logs each number in the array.")
+function printArray(arr){
+  let result = ""
+  for(let i = 0; i < arr.length; i++){
+      result = result + " " + arr[i]
+  }
+  return result
+}
+arr = [2,3,5]
+console.log(printArray(arr))
+
+
