@@ -284,3 +284,23 @@ function addSevenToMost(arr){
 }
 arr = [1, 3, 5, 7, 11]
 console.log(addSevenToMost(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Write a function that accepts any array, and returns a new array with the array values that are greater than its 2nd value. If the array that was passed to the function has less than two elements, have the function return false.")
+console.log("For example, greaterThanSecond([1,3,5,7]) should return [5, 7]. Similarly, greaterThanSecond([0, -3, 2, 5]) should return [0, 2, 5]. Also, greaterThanSecond([2]) should return false.")
+function greaterThanSecond(arr){
+  let newArr = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[1] < arr[i]){
+      newArr.push(arr[i])
+    }
+  }
+  if(newArr.length < 1){
+    return false
+  } else {
+    return newArr
+  }
+}
+console.log(greaterThanSecond(arr))
+
