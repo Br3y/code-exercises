@@ -255,3 +255,18 @@ function valGreaterThanSecond(arr) {
   return total
 }
 console.log(valGreaterThanSecond(arr))
+
+
+console.log("----------------------------------------------------------")
+console.log("Given two numbers passed to the function, return a new array of length num1 with each value num2.")
+console.log("For example, thisLengthThatValue(3,5) should return [5, 5, 5]. thisLengthThatValue(2, 10) should return [10, 10].")
+function thisLengthThatValue(num1, num2){
+  let newArr = []
+  for(let i = 0; i < num1; i++){
+    newArr[i] = num2
+  }
+  return newArr
+}
+let num1 = 3
+let num2 = 5
+console.log(thisLengthThatValue(num1, num2))
