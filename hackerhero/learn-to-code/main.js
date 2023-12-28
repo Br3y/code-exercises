@@ -270,3 +270,17 @@ function thisLengthThatValue(num1, num2){
 let num1 = 3
 let num2 = 5
 console.log(thisLengthThatValue(num1, num2))
+
+
+console.log("----------------------------------------------------------")
+console.log("Build function that accepts array. Return a new array with all values except first, adding 7 to each. Do not alter the original array.")
+console.log("For example, addSevenToMost([1,3,5]) should return [10, 12]. addSevenToMost([1, 3, 5, 7]) should return [10, 12, 14].")
+function addSevenToMost(arr){
+  let newArr = []
+  for(let i = 1; i < arr.length; i++){
+    newArr[i-1] = arr[i] + 7
+  } 
+  return newArr
+}
+arr = [1, 3, 5, 7, 11]
+console.log(addSevenToMost(arr))
