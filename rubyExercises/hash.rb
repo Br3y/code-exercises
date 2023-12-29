@@ -59,3 +59,9 @@ end
 # opposites.each_key { |key| puts key }
 # opposites.each_value { |value| puts value }
 # opposites.each { |key, value| puts "The opposite of #{key} is #{value}" }
+
+
+puts "----------------------------"
+# Given the following expression, how would you access the name of the person?
+person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
+puts person[:name]
