@@ -75,3 +75,13 @@ if person.value?("Bob")
 else 
     puts "Nope!"
 end
+
+
+puts "----------------------------"
+# Given the following code... What's the difference between the two hashes that were created?
+x = "hi there"
+my_hash = {x: "some value"}
+my_hash2 = {x => "some value"}
+puts my_hash
+puts my_hash2
+puts "first one is symbol x and the second one is string variable"
