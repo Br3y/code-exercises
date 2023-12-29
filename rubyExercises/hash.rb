@@ -65,3 +65,13 @@ puts "----------------------------"
 # Given the following expression, how would you access the name of the person?
 person = {name: 'Bob', occupation: 'web developer', hobbies: 'painting'}
 puts person[:name]
+
+
+puts "----------------------------"
+# What method could you use to find out if a Hash contains a specific value in it? Write a program that verifies that the value is within the hash.
+puts person.fetch(:occupation)
+if person.value?("Bob")
+    puts "Got it!"
+else 
+    puts "Nope!"
+end
