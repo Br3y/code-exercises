@@ -11,3 +11,15 @@ def multiply(num1, num2)
     return num1 * num2
 end
 puts multiply(5, 10)
+
+
+puts "----------------------------"
+# What will the following code print to the screen?
+puts "It will not print anything to the screen."
+def scream(words)
+    words = words + "!!!!"
+    return
+    puts words
+end
+  
+scream("Yippeee")
