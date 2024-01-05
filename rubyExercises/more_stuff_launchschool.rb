@@ -10,3 +10,12 @@ def is_word_lab_exist(string)
 end
 string = ["laboration", "experiment", "Pans Labyrinth", "elaborate", "polar bear"]
 p is_word_lab_exist(string)
+
+
+puts "----------------------------"
+puts "What will the following program print to the screen? What will it return?"
+def execute(&block)
+    block
+end
+  
+execute { puts "Hello from inside the execute method!" }
