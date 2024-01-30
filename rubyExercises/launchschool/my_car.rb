@@ -33,10 +33,6 @@ class MyCar
         self.color = color
     end
     
-    def information
-        puts "year #{@year}, color #{@color}, mode #{@model}"
-    end
-
     def self.gas_mileage(gallons, miles)
         puts "#{miles / gallons} miles per gallon of gas"
     end 
@@ -44,20 +40,13 @@ class MyCar
     def to_s
         "MyCar is a #{color}, #{year}, #{model}!"
     end
-    def self.this_is_a_class_method
-        'asdasd'
-    end
-    puts self
+
 end
 
 honda = MyCar.new("2020", "red", "123x56")
 honda.speed_up(25)
 honda.speed
-honda.speed_up(25)
-honda.speed
 honda.color = "yellow"
 honda.year
 honda.spray_paint("blue")
-honda.information
 MyCar.gas_mileage(13, 351)
-puts MyCar.this_is_a_class_method
