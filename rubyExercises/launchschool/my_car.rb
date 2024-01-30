@@ -1,6 +1,6 @@
 require 'pry-byebug'
 class MyCar
-    attr_accessor :color
+    attr_accessor :color, :model
     attr_reader :year
 
     def initialize(year, color, model)
@@ -9,6 +9,7 @@ class MyCar
         @model = model
         @speed = 0
     end
+
     def speed
         puts "You are now going #{@speed} mph"
     end
@@ -31,8 +32,17 @@ class MyCar
     def spray_paint(color)
         self.color = color
     end
+    
     def information
         puts "year #{@year}, color #{@color}, mode #{@model}"
+    end
+
+    def self.gas_mileage(gallons, miles)
+        puts "#{miles / gallons} miles per gallon of gas"
+    end
+
+    def to_s
+        "MyCar is a #{color}, #{year}, #{model}!"
     end
 end
 
@@ -45,3 +55,4 @@ honda.color = "yellow"
 honda.year
 honda.spray_paint("blue")
 honda.information
+puts honda
