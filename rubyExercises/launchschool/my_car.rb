@@ -56,7 +56,7 @@ class Vehicle
         self.color = color
     end
 
-    protected
+    private
 
     def years
         Time.now.year - self.year
@@ -81,7 +81,7 @@ class MyTruck < Vehicle
     end
 end
 
-honda = MyCar.new("2020", "red", "123x56")
+honda = MyCar.new(2020, "red", "123x56")
 honda.speed_up(25)
 honda.speed
 honda.color = "yellow"
@@ -91,10 +91,10 @@ honda.spray_paint("blue")
 MyCar.gas_mileage(13, 351)
 print "Truck: "
 MyTruck.gas_mileage(25, 350)
-mytruck = MyTruck.new("2019", "blue", "435b3d")
+mytruck = MyTruck.new(2019, "blue", "435b3d")
 puts mytruck
 puts mytruck.can_tow?(1000)
-
+puts mytruck.age
 # ancestor of each class
 puts "-------------"
 puts MyCar.ancestors
