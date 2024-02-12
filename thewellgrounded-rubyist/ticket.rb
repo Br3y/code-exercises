@@ -35,3 +35,8 @@ if respond_to?(:"ticket_#{request}", true)
 else
   puts "Invalid request"
 end
+
+
+# what i learn new in methods
+# freeze (make it like constant), dup (duplicate)
+# replace (replace refence so like !) + (damay yung previous ni-assign variable)
