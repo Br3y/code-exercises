@@ -17,6 +17,13 @@ class Ticket
   def price
     @price
   end
+
+  def set_price(amount)
+    @price = amount
+  end
 end
 
 th = Ticket.new("Town Hall", "11/12/13", 63.00)
+puts th.price
+th.set_price = 62.00
+puts th.price
