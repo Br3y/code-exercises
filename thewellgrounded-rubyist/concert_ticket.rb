@@ -14,3 +14,5 @@ class Ticket
     @price
   end
 end
+
+th = Ticket.new("Town Hall", "11/12/13", 63.00)
