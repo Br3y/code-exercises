@@ -21,3 +21,11 @@ sc1 = Suitcase.new
 sc2 = Suitcase.new
 sc3 = Suitcase.new
 sc4 = Suitcase.new
+
+ch.load_and_report(sc1)
+ch.load_and_report(sc2)
+ch.load_and_report(sc3)
+ch.load_and_report(sc4)
+first_unload = ch.unload
+print "The first suitcase off the plane is...."
+puts first_unload.object_id
