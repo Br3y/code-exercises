@@ -15,3 +15,9 @@ class CargoHold
     take_from_stack
   end
 end
+
+ch = CargoHold.new
+sc1 = Suitcase.new
+sc2 = Suitcase.new
+sc3 = Suitcase.new
+sc4 = Suitcase.new
