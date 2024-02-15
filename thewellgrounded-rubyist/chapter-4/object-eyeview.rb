@@ -12,3 +12,6 @@ class BankAccount
     puts "which was defined in the InterestBearing module..."
   end
 end
+
+account = BankAccount.new
+account.calculate_interest
