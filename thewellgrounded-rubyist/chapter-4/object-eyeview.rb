@@ -1,0 +1,3 @@
+module InterestingBearing
+
+end
