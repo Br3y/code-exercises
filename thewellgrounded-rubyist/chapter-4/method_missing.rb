@@ -24,7 +24,7 @@ class Person
         person.send(attr).include?(args[0])
       end
     else
-      
+      raise ArgumentError, "Can't find #{attr}"
     end
   end
 end
