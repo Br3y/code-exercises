@@ -16,6 +16,9 @@ class Person
   def hash_hobby(hobby)
     @hobbies << hobby
   end
+
+  def self.method_missing(m, *args)
+  end
 end
 
 j = Person.new("John")
