@@ -1,3 +1,7 @@
+class Person
+
+end
+
 j = Person.new("John")
 p = Person.new("Paul")
 g = Person.new("George")
