@@ -1,5 +1,13 @@
 class Person
+  PEOPLE = []
+  attr_accessor :name, :friends, :hobbies
 
+  def initialize(name)
+    @name = name
+    @hobbies = []
+    @friends = []
+    PEOPLE << self
+  end
 end
 
 j = Person.new("John")
