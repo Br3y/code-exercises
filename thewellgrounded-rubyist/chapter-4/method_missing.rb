@@ -13,13 +13,14 @@ class Person
     @friends << friend
   end 
 
-  def hash_hobby(hobby)
+  def has_hobby(hobby)
     @hobbies << hobby
   end
 
   def self.method_missing(m, *args)
     method = m.to_s
     if method.start_with?("all_with_")
+      attr = method[9..-1]
       PEOPLE.find_all do |person|
         person.send(attr).include?(args[0])
       end
