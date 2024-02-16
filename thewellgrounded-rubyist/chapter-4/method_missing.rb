@@ -18,6 +18,7 @@ class Person
   end
 
   def self.method_missing(m, *args)
+    method = m.to_s
   end
 end
 
