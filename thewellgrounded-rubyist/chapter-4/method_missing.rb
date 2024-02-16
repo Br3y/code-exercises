@@ -12,6 +12,10 @@ class Person
   def has_friend(friend)
     @friends << friend
   end 
+
+  def hash_hobby(hobby)
+    @hobbies << hobby
+  end
 end
 
 j = Person.new("John")
