@@ -8,6 +8,10 @@ class Person
     @friends = []
     PEOPLE << self
   end
+
+  def has_friend(friend)
+    @friends << friend
+  end 
 end
 
 j = Person.new("John")
