@@ -19,6 +19,11 @@ class Person
 
   def self.method_missing(m, *args)
     method = m.to_s
+    if method.start_with?("all_with_")
+
+    else
+      
+    end
   end
 end
 
